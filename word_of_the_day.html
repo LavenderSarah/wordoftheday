@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Word of the Day</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Ensure the body takes up the entire viewport height */
+            margin: 0;
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px; /* Add space below the h1 */
+        }
+
+        .word-container {
+            text-align: center;
+            max-width: 400px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word of the Day:</h1>
+    <div class="word-container">
+        <p>Arabic: <span id="arabic-word">{{ random_word.arabic_word }}</span></p>
+        <p>English: <span id="english-word">{{ random_word.english_word }}</span></p>
+    </div>
+</body>
+
+</html>
